@@ -1,0 +1,40 @@
+.all{
+    display: flex;
+    padding-left: 77px ;
+    padding-right: 30px ;
+    font-family: Helvetica, sans-serif;
+    color: #d8d7d7;
+    
+   
+}
+.profile{
+    width: 20%;
+    background-color: aqua;
+
+}
+.mid{
+    width: 45%;
+    background-color: #252728;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.news{
+    background-color: rgb(208, 255, 0);
+
+}
+.user{
+    display: flex;
+}
+.avt{
+    width: 40px;
+    border-radius: 100%;
+    padding-right: 10px;
+}
+.content{
+    padding-top: 15px;
+    
+}
+.post{
+    padding-left: 21px;
+    padding-top: 15px;
+}

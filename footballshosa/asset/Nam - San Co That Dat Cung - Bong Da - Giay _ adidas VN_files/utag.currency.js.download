@@ -1,0 +1,24 @@
+var tealiumiq_currency = {
+    ts:"202504220100",
+    rates:{"STD":22281.8,"SVC":8.75,"TJS":10.7338,"BAM":1.702617,"BDT":121.444,"MMK":2098,"FJD":2.29,"UAH":41.376291,"JPY":140.855,"RUB":81.337013,"CNH":7.297815,"BYN":3.276517,"TZS":2685,"EUR":0.870278,"MXN":19.707901,"IQD":1310,"QAR":3.641,"BTN":85.135111,"NAD":18.77,"MOP":7.993597,"GEL":2.745,"CDF":2877,"BHD":0.375218,"ETB":130.95,"KWD":0.304992,"RSD":102.351756,"NIO":36.797595,"NGN":1604.65,"CUC":1,"CNY":7.2924,"LAK":21658.200004,"TND":2.955,"LSL":18.77,"BSD":1,"GMD":71.749996,"YER":245.199986,"ILS":3.696085,"UGX":3664.989916,"JOD":0.7094,"DOP":59.75,"CZK":21.772874,"AUD":1.560378,"GBP":0.747901,"MRU":39.65,"MAD":9.249607,"MWK":1736,"NOK":10.382305,"PLN":3.715167,"GNF":8655.5,"MUR":44.55,"SEK":9.529196,"ZWL":322,"SSP":130.26,"DZD":131.554401,"TRY":38.241502,"ISK":126.28,"SAR":3.736251,"WST":2.8,"KES":129.85,"COP":4258.481775,"TWD":32.477502,"UZS":12915,"IMP":0.747901,"PHP":56.609996,"PGK":4.0645,"HKD":7.760685,"UYU":42.348428,"KRW":1425.415848,"MZN":64.01,"NPR":136.463645,"JMD":158.080998,"EGP":50.5947,"MVR":15.405,"ARS":1126.1953,"SCR":14.324044,"BWP":13.775,"IRR":42100,"SLL":20969.5,"SDG":600.5,"SHP":0.747901,"TMT":3.5,"CLP":961.65,"IDR":16824,"XPD":0.00107407,"ERN":15,"XCD":2.700001,"FKP":0.747901,"MGA":4555,"VUV":118.722,"STN":21.55,"XAG":0.03061544,"CAD":1.383844,"CUP":25.75,"ALL":86.65,"SOS":571.5,"AMD":390.51,"AED":3.673,"BTC":1.140445e-05,"ZMW":28.602542,"CLF":0.02506,"BMD":1,"XPT":0.00104919,"GHS":15.46,"LBP":89658.61136,"KGS":86.8678,"KPW":900,"VND":25881,"KYD":0.833333,"NZD":1.670047,"BZD":2.00787,"CRC":501.975477,"BIF":2930,"GTQ":7.701335,"LRD":199.524922,"SBD":8.326764,"MKD":53.662916,"GYD":209.738,"DJF":177.710001,"BOB":6.922961,"AFN":71.5,"LKR":299.141989,"ANG":1.79,"HTG":130.428,"XAU":0.000292,"AWG":1.8015,"THB":33.12,"MNT":3398,"PYG":7998.010001,"CHF":0.811164,"BND":1.306385,"PKR":280.5,"MYR":4.381,"TOP":2.40776,"SZL":18.72599,"XPF":103.851752,"KMF":429.999962,"XDR":0.711442,"GGP":0.747901,"MDL":17.299636,"RON":4.3282,"RWF":1415,"VES":80.858621,"XOF":570.864738,"SYP":13002,"SGD":1.306137,"HRK":6.559047,"TTD":6.7844,"BGN":1.713356,"OMR":0.383281,"LYD":5.47,"CVE":96.775,"AZN":1.7,"ZAR":18.7226,"SRD":37.178601,"HUF":354.606682,"BBD":2,"DKK":6.498966,"USD":1,"PEN":3.7045,"HNL":25.849999,"GIP":0.747901,"KZT":520.535106,"INR":85.14305,"KHR":4015,"PAB":1,"BRL":5.806999,"JEP":0.747901,"XAF":570.864738,"AOA":917.5},
+    convert:function(a,f,t){
+                // Convert that value to an array
+                var isString = typeof a == "string",
+                        converted = isString ? [a] : a;
+
+                // Iterate over the values to convert each one
+                for (var i=0; i<converted.length; i++) {
+                        converted[i] = parseFloat(converted[i]);
+                        f = f.toUpperCase();
+                        t = t.toUpperCase();
+                        if (converted[i] > 0 && this.rates[f] > 0 && this.rates[t] > 0){
+                                var v = converted[i] / this.rates[f] * this.rates[t];
+                                converted[i] = v.toFixed(2);
+                        }
+                }
+
+                // Return the value we accepted
+                if (isString) return converted[0];
+                else return converted;
+    }
+}

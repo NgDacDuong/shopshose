@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--MENU NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div>
+                <img src="../asset/logo.png" alt="....." width="60" height="60" class="logonav">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Giày</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Phụ Kiện
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Bóng</a></li>
+                            <li><a class="dropdown-item" href="#">Quần Áo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Phụ Kiện</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                
+                
+                
+                <div>
+                   <a href="dangnhap.html">
+                    <button type="button" class="btn btn-outline-light">Đăng Nhập</button>
+                   
+                   </a> 
+                   <a href="dangki.html">
+                    <button type="button" class="btn btn-outline-light">Đăng Kí</button>   
+                   </a>  
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- video mở đầu-->
+    <video class="w-100" loop="" muted="" autoplay="" playsinline="" aria-label="">
+        <source
+            src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_1920,w_1920/H24371_FW_25_Motorport_Sustain_Miami_Cutdown_2_6s_2880x1200_b7331b218c.mp4"
+            type="video/mp4" width="" height="1200" media="(min-width: 960px)">
+        <source
+            src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_960,w_960/H24371_FW_25_Motorport_Sustain_Miami_Cutdown_2_6s_1600x1600_1916792fb9.mp4"
+            type="video/mp4" width="100%" height="1600" media="(min-width: 768px)">
+        <source
+            src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_768,w_768/H24371_FW_25_Motorport_Sustain_Miami_Cutdown_2_6s_750x1000_7aad0764be.mp4"
+            type="video/mp4" width="100%" height="1000" media="(max-width: 767px)">
+    </video>
+
+
+
+    <!-- side các loại đinh-->
+    <div class="content">
+        <div class="carousel-content">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../asset/fg.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../asset/tf.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../asset/ag.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../asset/mg.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="d-flex align-items-center justify-content-around flex-wrap mt-5">
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Firm_Ground_Luoi_Ga_Lat_Predator_Elite_trang_ID8967_HM1.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+            <p>001</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #00ff44; margin-right: 5px;" class="type"> cỏ</div>
+                <div style="background-color: #ff009d49;" class="type">Độc </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_F50_Pro_trang_IE1220_01_00_standard_hover.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+
+            <p>002</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #00ff44; margin-right: 5px;" class="type"> Cỏ</div>
+                <div style="background-color: #ff009d49;" class="type">Độc</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_X_Crazyfast.3_trang_ID9337_01_standard_hover.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+
+            <p>003</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #00ff44; margin-right: 5px;" class="type"> Cỏ</div>
+                <div style="background-color: #ff009d49;" class="type">Độc</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Firm_Ground_Khong_Day_Predator_Elite_Mau_vang_IE2366_HM3_hover.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+
+            <p>004</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #ff0000; margin-right: 5px;" class="type"> LỬA</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_Copa_Pure_3_League_Mau_xanh_da_troi_ID9045_02_standard.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+            <p>005</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #ff0000; margin-right: 5px;" class="type">Lửa</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_F50_Club_Mau_xanh_da_troi_IE1223_01_00_standard_hover.avif"
+                        style="width:80%">
+                </div>
+            </a>
+            <p>006</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #ff0000; margin-right: 5px;" class="type"> Lửa</div>
+                <div style="background-color: #00eeff;" class="type">Bay</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_Predator_League_Luoi_Ga_Lat_DJo_JS0384_01_00_standard_hover.avif"
+                        style="width:80%">
+                </div>
+            </a>
+            <p>007</p>
+            <h3> </h3>
+            <div class="typeline">
+                <div style="background-color: #0033ff; margin-right: 5px;" class="type"> Nước</div>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="cardimage">
+                    <img src="../asset/Giay_DJa_Bong_Turf_Predator_League_trang_ID3767_02_standard.avif"
+                        style="width:80%">
+                </div>
+            </a>
+
+
+            <p>008</p>
+            <h3></h3>
+            <div class="typeline">
+                <div style="background-color: #2200ff; margin-right: 5px;" class="type"> Nước</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <p>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+            aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+            elements</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    Some placeholder content for the first collapse component of this multi-collapse example. This panel
+                    is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    Some placeholder content for the second collapse component of this multi-collapse example. This
+                    panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

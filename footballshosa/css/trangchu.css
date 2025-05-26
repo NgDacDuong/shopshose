@@ -1,0 +1,62 @@
+.carousel-inner {
+    height: 500px; /* Chiều cao cố định */
+    overflow: hidden;
+}
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+    transform: scale(1) !important; /* Ngăn phóng to */
+    
+}
+
+.carousel-content{
+    width: 65%;
+    
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.typeline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.type{
+    font-family:  Helvetica, sans-serif;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top:2px ;
+    padding-bottom:2px ;
+    border: 0 solid;
+    border-radius: 3px;
+}
+h3{
+    font-family:  Helvetica, sans-serif;
+}
+.cardimage{
+    /* background-color: rgb(218, 209, 198); */
+    border-radius: 10px;
+    
+}
+.product-item{
+    text-align: center;
+    /* padding-bottom: 50px;
+    margin-right: 15px; */
+    width: 25%;
+
+}
+
+a {
+    text-decoration: none;
+}
