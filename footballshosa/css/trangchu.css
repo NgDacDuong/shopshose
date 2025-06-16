@@ -60,3 +60,8 @@ h3{
 a {
     text-decoration: none;
 }
+.chatcall{
+    position:fixed;
+    bottom: 200px;
+    border-radius: 50px;
+}
