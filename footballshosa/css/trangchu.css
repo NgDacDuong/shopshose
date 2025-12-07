@@ -49,6 +49,10 @@ h3{
     border-radius: 10px;
     
 }
+
+.cardimage img{
+    /* width: 100% !important; */
+}
 .product-item{
     text-align: center;
     /* padding-bottom: 50px;
@@ -64,4 +68,25 @@ a {
     position:fixed;
     bottom: 200px;
     border-radius: 50px;
+}
+
+.typeline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.typeline button:first-child{
+    width: 29%;
+    background-color: #00ff44; 
+    /* margin-right: 20px; */
+}
+
+.typeline button:last-child{
+    width: 29%;
+    background-color: #ff009d49;
+}
+
+.product-item{
+    margin-bottom: 50px;
 }

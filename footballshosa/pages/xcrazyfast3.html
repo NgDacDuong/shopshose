@@ -5,14 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/f50prodotrang.css">
+    <link rel="stylesheet" href="../css/xcrazyfast3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <div class="w-100 d-flex justify-content-evenly align-items-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div>
+                <img src="../asset/logo.png" alt="....." class="logonav">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="trangchu.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Giày</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Phụ Kiện
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="bong.html">Bóng</a></li>
+                            <li><a class="dropdown-item" href="quanao.html">Quần Áo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="phukien.html">Phụ Kiện</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+
+                <div>
+                    <a href="dangnhap.html">
+                        <button type="button" class="btn btn-outline-light">Đăng Nhập</button>
+
+                    </a>
+                    <a href="dangki.html">
+                        <button type="button" class="btn btn-outline-light">Đăng Kí</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
         <div class="col-8 d-flex flex-wrap justify-content-center align-items-center">
             <div class="contain">
                 <img src="../asset/Giay_DJa_Bong_Turf_X_Crazyfast.3_DJen_ID9336_01_standard_hover.avif">
@@ -27,13 +81,13 @@
                 <img src="../asset/Giay_DJa_Bong_Turf_X_Crazyfast.3_trang_ID9337_01_standard_hover.avif">
             </div>
         </div>
-    </div>
+  
 
-    <div>
+        <div>
         <div style="font-size:xx-large;">
-            Adidas Turf F50 Pro
+            X CrazyFast.3
         </div>
-        <p> 3.500.000</p>
+        <p> 1.350.000</p>
         <p>Kích Cỡ</p>
         <button style="background-color: black;" class="type"><span style="color: aliceblue;">7</span></button>
         <button style="background-color: black;" class="type"><span style="color: aliceblue;">7.5</span></button>
@@ -44,10 +98,13 @@
         <button style="background-color: black;" class="type"><span style="color: aliceblue;">10</span></button>
         <button style="background-color: black;" class="type"><span style="color: aliceblue;">10.5</span></button>
 
-        <button style="background-color: black; height: 50px ;width: 300px;" class="type"><span style="color: aliceblue;">Thêm Vào Giỏ Hàng</span><i
-                class="bi bi-arrow-right-square"></i></button>
-        <button style="background-color: black; height: 50px ;width: 50px;" class="type"><i class="bi bi-arrow-right"></i></button>
+        <button style="background-color: black; height: 50px ;width: 300px;" class="type"><span
+                style="color: aliceblue;">Thêm Vào Giỏ Hàng</span><i class="bi bi-arrow-right-square"></i></button>
+        <button style="background-color: black; height: 50px ;width: 50px;" class="type"><i
+                class="bi bi-arrow-right"></i></button>
+        </div>
     </div>
+
 
     <!--Script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
